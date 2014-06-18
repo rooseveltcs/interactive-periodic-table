@@ -1,10 +1,25 @@
+/**
+ * This is where the main method for the program is.
+ * This is where the elements are added to 
+ * the ArrayList table. The nulls are also 
+ * added here. The ArrayList table is put 
+ * as a parameter for the tableframe created 
+ * here. The method for adding mouseListeners. 
+ * 
+ * @author Zoe Lawrence
+ * @version 06/18/14
+ * 
+ */
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import java.io.*;
+
 
 public class MainFrame {
-   public static void main(String[] args) {
+   public static void main(String[] args) throws FileNotFoundException {
       ArrayList<Element> table = new ArrayList<Element>();
       for(int i = 0; i < 18; i++) { //reducing redundancy, I swear
          table.add(null);
